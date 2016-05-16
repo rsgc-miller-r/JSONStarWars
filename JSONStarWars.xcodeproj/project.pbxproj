@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08FE3B881CEA0B9D00EBF7AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FE3B871CEA0B9D00EBF7AF /* AppDelegate.swift */; };
+		08FE3B8A1CEA0B9D00EBF7AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FE3B891CEA0B9D00EBF7AF /* ViewController.swift */; };
+		08FE3B8C1CEA0B9D00EBF7AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08FE3B8B1CEA0B9D00EBF7AF /* Assets.xcassets */; };
+		08FE3B8F1CEA0B9D00EBF7AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08FE3B8D1CEA0B9D00EBF7AF /* Main.storyboard */; };
+		08FE3B9A1CEA0B9D00EBF7AF /* JSONStarWarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FE3B991CEA0B9D00EBF7AF /* JSONStarWarsTests.swift */; };
+		08FE3BA51CEA0B9D00EBF7AF /* JSONStarWarsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FE3BA41CEA0B9D00EBF7AF /* JSONStarWarsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08FE3B961CEA0B9D00EBF7AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FE3B7C1CEA0B9D00EBF7AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08FE3B831CEA0B9D00EBF7AF;
+			remoteInfo = JSONStarWars;
+		};
+		08FE3BA11CEA0B9D00EBF7AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FE3B7C1CEA0B9D00EBF7AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08FE3B831CEA0B9D00EBF7AF;
+			remoteInfo = JSONStarWars;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08FE3B841CEA0B9D00EBF7AF /* JSONStarWars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSONStarWars.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08FE3B871CEA0B9D00EBF7AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		08FE3B891CEA0B9D00EBF7AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		08FE3B8B1CEA0B9D00EBF7AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08FE3B8E1CEA0B9D00EBF7AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		08FE3B901CEA0B9D00EBF7AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08FE3B951CEA0B9D00EBF7AF /* JSONStarWarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONStarWarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08FE3B991CEA0B9D00EBF7AF /* JSONStarWarsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONStarWarsTests.swift; sourceTree = "<group>"; };
+		08FE3B9B1CEA0B9D00EBF7AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08FE3BA01CEA0B9D00EBF7AF /* JSONStarWarsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONStarWarsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08FE3BA41CEA0B9D00EBF7AF /* JSONStarWarsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONStarWarsUITests.swift; sourceTree = "<group>"; };
+		08FE3BA61CEA0B9D00EBF7AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08FE3B811CEA0B9D00EBF7AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08FE3B921CEA0B9D00EBF7AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08FE3B9D1CEA0B9D00EBF7AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FE3B7B1CEA0B9D00EBF7AF = {
+			isa = PBXGroup;
+			children = (
+				08FE3B861CEA0B9D00EBF7AF /* JSONStarWars */,
+				08FE3B981CEA0B9D00EBF7AF /* JSONStarWarsTests */,
+				08FE3BA31CEA0B9D00EBF7AF /* JSONStarWarsUITests */,
+				08FE3B851CEA0B9D00EBF7AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08FE3B851CEA0B9D00EBF7AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08FE3B841CEA0B9D00EBF7AF /* JSONStarWars.app */,
+				08FE3B951CEA0B9D00EBF7AF /* JSONStarWarsTests.xctest */,
+				08FE3BA01CEA0B9D00EBF7AF /* JSONStarWarsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08FE3B861CEA0B9D00EBF7AF /* JSONStarWars */ = {
+			isa = PBXGroup;
+			children = (
+				08FE3B871CEA0B9D00EBF7AF /* AppDelegate.swift */,
+				08FE3B891CEA0B9D00EBF7AF /* ViewController.swift */,
+				08FE3B8B1CEA0B9D00EBF7AF /* Assets.xcassets */,
+				08FE3B8D1CEA0B9D00EBF7AF /* Main.storyboard */,
+				08FE3B901CEA0B9D00EBF7AF /* Info.plist */,
+			);
+			path = JSONStarWars;
+			sourceTree = "<group>";
+		};
+		08FE3B981CEA0B9D00EBF7AF /* JSONStarWarsTests */ = {
+			isa = PBXGroup;
+			children = (
+				08FE3B991CEA0B9D00EBF7AF /* JSONStarWarsTests.swift */,
+				08FE3B9B1CEA0B9D00EBF7AF /* Info.plist */,
+			);
+			path = JSONStarWarsTests;
+			sourceTree = "<group>";
+		};
+		08FE3BA31CEA0B9D00EBF7AF /* JSONStarWarsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				08FE3BA41CEA0B9D00EBF7AF /* JSONStarWarsUITests.swift */,
+				08FE3BA61CEA0B9D00EBF7AF /* Info.plist */,
+			);
+			path = JSONStarWarsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08FE3B831CEA0B9D00EBF7AF /* JSONStarWars */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08FE3BA91CEA0B9D00EBF7AF /* Build configuration list for PBXNativeTarget "JSONStarWars" */;
+			buildPhases = (
+				08FE3B801CEA0B9D00EBF7AF /* Sources */,
+				08FE3B811CEA0B9D00EBF7AF /* Frameworks */,
+				08FE3B821CEA0B9D00EBF7AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JSONStarWars;
+			productName = JSONStarWars;
+			productReference = 08FE3B841CEA0B9D00EBF7AF /* JSONStarWars.app */;
+			productType = "com.apple.product-type.application";
+		};
+		08FE3B941CEA0B9D00EBF7AF /* JSONStarWarsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08FE3BAC1CEA0B9D00EBF7AF /* Build configuration list for PBXNativeTarget "JSONStarWarsTests" */;
+			buildPhases = (
+				08FE3B911CEA0B9D00EBF7AF /* Sources */,
+				08FE3B921CEA0B9D00EBF7AF /* Frameworks */,
+				08FE3B931CEA0B9D00EBF7AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08FE3B971CEA0B9D00EBF7AF /* PBXTargetDependency */,
+			);
+			name = JSONStarWarsTests;
+			productName = JSONStarWarsTests;
+			productReference = 08FE3B951CEA0B9D00EBF7AF /* JSONStarWarsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		08FE3B9F1CEA0B9D00EBF7AF /* JSONStarWarsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08FE3BAF1CEA0B9D00EBF7AF /* Build configuration list for PBXNativeTarget "JSONStarWarsUITests" */;
+			buildPhases = (
+				08FE3B9C1CEA0B9D00EBF7AF /* Sources */,
+				08FE3B9D1CEA0B9D00EBF7AF /* Frameworks */,
+				08FE3B9E1CEA0B9D00EBF7AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08FE3BA21CEA0B9D00EBF7AF /* PBXTargetDependency */,
+			);
+			name = JSONStarWarsUITests;
+			productName = JSONStarWarsUITests;
+			productReference = 08FE3BA01CEA0B9D00EBF7AF /* JSONStarWarsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FE3B7C1CEA0B9D00EBF7AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Gorrila 8Ball Ribs";
+				TargetAttributes = {
+					08FE3B831CEA0B9D00EBF7AF = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					08FE3B941CEA0B9D00EBF7AF = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 08FE3B831CEA0B9D00EBF7AF;
+					};
+					08FE3B9F1CEA0B9D00EBF7AF = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 08FE3B831CEA0B9D00EBF7AF;
+					};
+				};
+			};
+			buildConfigurationList = 08FE3B7F1CEA0B9D00EBF7AF /* Build configuration list for PBXProject "JSONStarWars" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08FE3B7B1CEA0B9D00EBF7AF;
+			productRefGroup = 08FE3B851CEA0B9D00EBF7AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08FE3B831CEA0B9D00EBF7AF /* JSONStarWars */,
+				08FE3B941CEA0B9D00EBF7AF /* JSONStarWarsTests */,
+				08FE3B9F1CEA0B9D00EBF7AF /* JSONStarWarsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08FE3B821CEA0B9D00EBF7AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08FE3B8C1CEA0B9D00EBF7AF /* Assets.xcassets in Resources */,
+				08FE3B8F1CEA0B9D00EBF7AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08FE3B931CEA0B9D00EBF7AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08FE3B9E1CEA0B9D00EBF7AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08FE3B801CEA0B9D00EBF7AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08FE3B8A1CEA0B9D00EBF7AF /* ViewController.swift in Sources */,
+				08FE3B881CEA0B9D00EBF7AF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08FE3B911CEA0B9D00EBF7AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08FE3B9A1CEA0B9D00EBF7AF /* JSONStarWarsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08FE3B9C1CEA0B9D00EBF7AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08FE3BA51CEA0B9D00EBF7AF /* JSONStarWarsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08FE3B971CEA0B9D00EBF7AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08FE3B831CEA0B9D00EBF7AF /* JSONStarWars */;
+			targetProxy = 08FE3B961CEA0B9D00EBF7AF /* PBXContainerItemProxy */;
+		};
+		08FE3BA21CEA0B9D00EBF7AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08FE3B831CEA0B9D00EBF7AF /* JSONStarWars */;
+			targetProxy = 08FE3BA11CEA0B9D00EBF7AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		08FE3B8D1CEA0B9D00EBF7AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08FE3B8E1CEA0B9D00EBF7AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08FE3BA71CEA0B9D00EBF7AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		08FE3BA81CEA0B9D00EBF7AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		08FE3BAA1CEA0B9D00EBF7AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = JSONStarWars/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GorrillaRibs.JSONStarWars;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		08FE3BAB1CEA0B9D00EBF7AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = JSONStarWars/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GorrillaRibs.JSONStarWars;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		08FE3BAD1CEA0B9D00EBF7AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = JSONStarWarsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GorrillaRibs.JSONStarWarsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JSONStarWars.app/Contents/MacOS/JSONStarWars";
+			};
+			name = Debug;
+		};
+		08FE3BAE1CEA0B9D00EBF7AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = JSONStarWarsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GorrillaRibs.JSONStarWarsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JSONStarWars.app/Contents/MacOS/JSONStarWars";
+			};
+			name = Release;
+		};
+		08FE3BB01CEA0B9D00EBF7AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = JSONStarWarsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GorrillaRibs.JSONStarWarsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JSONStarWars;
+			};
+			name = Debug;
+		};
+		08FE3BB11CEA0B9D00EBF7AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = JSONStarWarsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GorrillaRibs.JSONStarWarsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JSONStarWars;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08FE3B7F1CEA0B9D00EBF7AF /* Build configuration list for PBXProject "JSONStarWars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08FE3BA71CEA0B9D00EBF7AF /* Debug */,
+				08FE3BA81CEA0B9D00EBF7AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08FE3BA91CEA0B9D00EBF7AF /* Build configuration list for PBXNativeTarget "JSONStarWars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08FE3BAA1CEA0B9D00EBF7AF /* Debug */,
+				08FE3BAB1CEA0B9D00EBF7AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		08FE3BAC1CEA0B9D00EBF7AF /* Build configuration list for PBXNativeTarget "JSONStarWarsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08FE3BAD1CEA0B9D00EBF7AF /* Debug */,
+				08FE3BAE1CEA0B9D00EBF7AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		08FE3BAF1CEA0B9D00EBF7AF /* Build configuration list for PBXNativeTarget "JSONStarWarsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08FE3BB01CEA0B9D00EBF7AF /* Debug */,
+				08FE3BB11CEA0B9D00EBF7AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FE3B7C1CEA0B9D00EBF7AF /* Project object */;
+}
