@@ -115,14 +115,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <searchField wantsLayer="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0fY-kQ-i42">
-                                <rect key="frame" x="177" y="265" width="96" height="22"/>
-                                <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" id="5gw-Mn-meF">
+                            <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TZR-4I-cLi">
+                                <rect key="frame" x="-703" y="-378" width="1920" height="1080"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="sapce" id="KFJ-f2-Zfz"/>
+                            </imageView>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UGu-ce-YBc">
+                                <rect key="frame" x="189" y="252" width="74" height="32"/>
+                                <buttonCell key="cell" type="push" title="Start!" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="C8s-w5-l1j">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </searchFieldCell>
-                            </searchField>
+                                </buttonCell>
+                            </button>
                         </subviews>
                     </view>
                 </viewController>
@@ -138,14 +141,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <searchField wantsLayer="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OIe-EX-0V4">
-                                <rect key="frame" x="177" y="258" width="96" height="22"/>
-                                <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" id="lO1-Ud-08n">
+                            <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cOL-Rg-yIW">
+                                <rect key="frame" x="-669" y="-359" width="1920" height="1080"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="sapce" id="AhJ-eR-eQq"/>
+                            </imageView>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xzy-v5-QXr">
+                                <rect key="frame" x="189" y="252" width="74" height="32"/>
+                                <buttonCell key="cell" type="push" title="Start!" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="0yz-jZ-MRp">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </searchFieldCell>
-                            </searchField>
+                                </buttonCell>
+                            </button>
                         </subviews>
                     </view>
                 </viewController>
@@ -153,4 +159,7 @@
             <point key="canvasLocation" x="-88" y="1081"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="sapce" width="1920" height="1080"/>
+    </resources>
 </document>
