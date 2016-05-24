@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "08FE3B831CEA0B9D00EBF7AF"
-               BuildableName = "JSONStarWars.app"
-               BlueprintName = "JSONStarWars"
-               ReferencedContainer = "container:JSONStarWars.xcodeproj">
+               BlueprintIdentifier = "081756231CF3D575004AF0E1"
+               BuildableName = "JSONSTARWARSios.app"
+               BlueprintName = "JSONSTARWARSios"
+               ReferencedContainer = "container:JSONSTARWARSios.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,30 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "08FE3B941CEA0B9D00EBF7AF"
-               BuildableName = "JSONStarWarsTests.xctest"
-               BlueprintName = "JSONStarWarsTests"
-               ReferencedContainer = "container:JSONStarWars.xcodeproj">
+               BlueprintIdentifier = "081756391CF3D575004AF0E1"
+               BuildableName = "JSONSTARWARSiosTests.xctest"
+               BlueprintName = "JSONSTARWARSiosTests"
+               ReferencedContainer = "container:JSONSTARWARSios.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "08FE3B9F1CEA0B9D00EBF7AF"
-               BuildableName = "JSONStarWarsUITests.xctest"
-               BlueprintName = "JSONStarWarsUITests"
-               ReferencedContainer = "container:JSONStarWars.xcodeproj">
+               BlueprintIdentifier = "081756441CF3D575004AF0E1"
+               BuildableName = "JSONSTARWARSiosUITests.xctest"
+               BlueprintName = "JSONSTARWARSiosUITests"
+               ReferencedContainer = "container:JSONSTARWARSios.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "08FE3B831CEA0B9D00EBF7AF"
-            BuildableName = "JSONStarWars.app"
-            BlueprintName = "JSONStarWars"
-            ReferencedContainer = "container:JSONStarWars.xcodeproj">
+            BlueprintIdentifier = "081756231CF3D575004AF0E1"
+            BuildableName = "JSONSTARWARSios.app"
+            BlueprintName = "JSONSTARWARSios"
+            ReferencedContainer = "container:JSONSTARWARSios.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "08FE3B831CEA0B9D00EBF7AF"
-            BuildableName = "JSONStarWars.app"
-            BlueprintName = "JSONStarWars"
-            ReferencedContainer = "container:JSONStarWars.xcodeproj">
+            BlueprintIdentifier = "081756231CF3D575004AF0E1"
+            BuildableName = "JSONSTARWARSios.app"
+            BlueprintName = "JSONSTARWARSios"
+            ReferencedContainer = "container:JSONSTARWARSios.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "08FE3B831CEA0B9D00EBF7AF"
-            BuildableName = "JSONStarWars.app"
-            BlueprintName = "JSONStarWars"
-            ReferencedContainer = "container:JSONStarWars.xcodeproj">
+            BlueprintIdentifier = "081756231CF3D575004AF0E1"
+            BuildableName = "JSONSTARWARSios.app"
+            BlueprintName = "JSONSTARWARSios"
+            ReferencedContainer = "container:JSONSTARWARSios.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

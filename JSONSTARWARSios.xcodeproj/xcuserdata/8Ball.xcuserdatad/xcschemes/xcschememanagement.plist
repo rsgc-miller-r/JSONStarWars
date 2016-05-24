@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>JSONStarWars.xcscheme</key>
+		<key>JSONSTARWARSios.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,17 +12,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>08FE3B831CEA0B9D00EBF7AF</key>
+		<key>081756231CF3D575004AF0E1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>08FE3B941CEA0B9D00EBF7AF</key>
+		<key>081756391CF3D575004AF0E1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>08FE3B9F1CEA0B9D00EBF7AF</key>
+		<key>081756441CF3D575004AF0E1</key>
 		<dict>
 			<key>primary</key>
 			<true/>

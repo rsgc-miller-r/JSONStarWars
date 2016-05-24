@@ -1,14 +1,14 @@
 //
-//  JSONStarWarsUITests.swift
-//  JSONStarWarsUITests
+//  JSONSTARWARSiosUITests.swift
+//  JSONSTARWARSiosUITests
 //
-//  Created by Gorrila 8Ball Ribs on 2016-05-16.
+//  Created by Gorrila 8Ball Ribs on 2016-05-23.
 //  Copyright © 2016 Gorrila 8Ball Ribs. All rights reserved.
 //
 
 import XCTest
 
-class JSONStarWarsUITests: XCTestCase {
+class JSONSTARWARSiosUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
