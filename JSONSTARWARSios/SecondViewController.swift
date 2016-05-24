@@ -26,9 +26,9 @@ class SecondViewController: UIViewController {
         do {
             let json = try NSJSONSerialization.JSONObjectWithData(theData, options: NSJSONReadingOptions.AllowFragments)
             
-            print(json)
+        //    print(json)
             
-            /*if let value = json as? [String : AnyObject] {
+            if let value = json as? [String : AnyObject] {
                 if let results = value["results"] as? [AnyObject]{
                     //print(results)
                     for data in results {
@@ -39,7 +39,7 @@ class SecondViewController: UIViewController {
                         
                     }
                 }
-            }*/
+            }
             
             
             dispatch_async(dispatch_get_main_queue()) {
@@ -93,7 +93,7 @@ class SecondViewController: UIViewController {
         
         if let url = NSURL(string: address) {
             
-            print(url)
+         //   print(url)
             
             let urlRequest = NSURLRequest(URL: url)
             let config = NSURLSessionConfiguration.defaultSessionConfiguration()
@@ -117,8 +117,9 @@ class SecondViewController: UIViewController {
     }
     
     @IBOutlet weak var peopleText: UITextView!
+    //@IBOutlet weak var peopleStart: UIButton!
     
-    @IBAction func peopleButton(sender: UIButton) {
+    @IBAction func peopleStart(sender: AnyObject) {
         
         self.getMyJSON()
         
@@ -128,6 +129,9 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        //peopleStart.addTarget(self, action: #selector(SecondViewController.getMyJSON), forControlEvents: .TouchUpInside)
+        
         // Do any additional setup after loading the view, typically from a nib.
         
         

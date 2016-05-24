@@ -93,7 +93,7 @@ class FirstViewController: UIViewController {
         
         if let url = NSURL(string: address) {
             
-            print(url)
+          //  print(url)
             
             let urlRequest = NSURLRequest(URL: url)
             let config = NSURLSessionConfiguration.defaultSessionConfiguration()
