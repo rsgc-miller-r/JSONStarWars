@@ -12,36 +12,39 @@
 import UIKit
 import Foundation
 
-var peopleAddress = String("http://swapi.co/api/people/?format=json")
+var peopleaddress = String("http://swapi.co/api/people/?format=json")
 
 
 class SecondViewController: UIViewController {
     
+    
     func parseMyJSON(theData : NSData) {
         
-        print(theData)
-        
+        //print(theData)
+        var isKill : String = ""
         
         do {
             let json = try NSJSONSerialization.JSONObjectWithData(theData, options: NSJSONReadingOptions.AllowFragments)
             
             print(json)
             
-            if let names = json["markers"] as? [AnyObject] {
-                for (name) in names {
-                    print(name)
-                    if let asDict = name as? [String : String] {
-                        asDict
-                        for (a, b) in asDict {
-                            print(a + ":" + b)
-                        }
+            /*if let value = json as? [String : AnyObject] {
+                if let results = value["results"] as? [AnyObject]{
+                    //print(results)
+                    for data in results {
+                        let range = String(data["name"]).startIndex.advancedBy(9)..<String(data["name"]).endIndex.advancedBy(-1)
+                        String(data["name"])
+                        print(String(data["name"])[range])
+                        isKill += (String(self.peopleText.text) + String(data["name"])[range] + "\n")
+                        
                     }
                 }
-            }
+            }*/
+            
             
             dispatch_async(dispatch_get_main_queue()) {
                 
-                
+                self.peopleText.text = isKill
             }
             
             
@@ -57,15 +60,15 @@ class SecondViewController: UIViewController {
         let myCompletionHandler : (NSData?, NSURLResponse?, NSError?) -> Void = {
             
             (data, response, error) in
-            print("")
-            print("</here da data/>")
-            print(data)
-            print("")
-            print("</here da respons/>")
-            print(response)
-            print("")
-            print("</here da godforsaken errors/>")
-            print(error)
+            /*print("")
+             print("</here da data/>")
+             print(data)
+             print("")
+             print("</here da respons/>")
+             print(response)
+             print("")
+             print("</here da godforsaken errors/>")
+             print(error)*/
             
             if let r = response as? NSHTTPURLResponse {
                 
@@ -86,7 +89,7 @@ class SecondViewController: UIViewController {
         
         
         
-        let address : String = peopleAddress
+        let address : String = peopleaddress
         
         if let url = NSURL(string: address) {
             
@@ -108,32 +111,35 @@ class SecondViewController: UIViewController {
         
     }
     
+    var representedObject: AnyObject? {
+        didSet {
+        }
+    }
     
-
-
-var representedObject: AnyObject? {
-didSet {
-}
-}
+    @IBOutlet weak var peopleText: UITextView!
     
-    
-
-
- override func viewDidLoad() {
-
-
-         super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    @IBAction func peopleButton(sender: UIButton) {
+        
+        self.getMyJSON()
+        
+    }
     
     
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        
+    }
     
-}
-
- override func didReceiveMemoryWarning() {
-
+    override func didReceiveMemoryWarning() {
+        
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     
-     super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-}
-
+    
+    
 }

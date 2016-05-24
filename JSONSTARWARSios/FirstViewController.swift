@@ -13,36 +13,38 @@
 import UIKit
 import Foundation
 
-var planetAddress = String("http://swapi.co/api/planets/?format=json")
+var planetaddress = String("http://swapi.co/api/planets/?format=json")
 
 class FirstViewController: UIViewController {
     
     
     func parseMyJSON(theData : NSData) {
         
-        print(theData)
-        
+        //print(theData)
+        var isKill : String = ""
         
         do {
             let json = try NSJSONSerialization.JSONObjectWithData(theData, options: NSJSONReadingOptions.AllowFragments)
             
-            print(json)
+            //print(json)
             
-            if let names = json["markers"] as? [AnyObject] {
-                for (name) in names {
-                    print(name)
-                    if let asDict = name as? [String : String] {
-                        asDict
-                        for (a, b) in asDict {
-                            print(a + ":" + b)
-                        }
+            if let value = json as? [String : AnyObject] {
+                if let results = value["results"] as? [AnyObject]{
+                    //print(results)
+                    for data in results {
+                        let range = String(data["name"]).startIndex.advancedBy(9)..<String(data["name"]).endIndex.advancedBy(-1)
+                        String(data["name"])
+                        print(String(data["name"])[range])
+                        isKill += (String(self.planetText.text) + String(data["name"])[range] + "\n")
+
                     }
                 }
             }
             
+            
             dispatch_async(dispatch_get_main_queue()) {
                 
-                
+                self.planetText.text = isKill
             }
             
             
@@ -58,7 +60,7 @@ class FirstViewController: UIViewController {
         let myCompletionHandler : (NSData?, NSURLResponse?, NSError?) -> Void = {
             
             (data, response, error) in
-            print("")
+            /*print("")
             print("</here da data/>")
             print(data)
             print("")
@@ -66,7 +68,7 @@ class FirstViewController: UIViewController {
             print(response)
             print("")
             print("</here da godforsaken errors/>")
-            print(error)
+            print(error)*/
             
             if let r = response as? NSHTTPURLResponse {
                 
@@ -87,7 +89,7 @@ class FirstViewController: UIViewController {
         
         
         
-        let address : String = planetAddress
+        let address : String = planetaddress
         
         if let url = NSURL(string: address) {
             
@@ -114,8 +116,7 @@ class FirstViewController: UIViewController {
         }
     }
 
-
-
+    @IBOutlet weak var planetText: UITextView!
 
     @IBAction func planetButton(sender: UIButton) {
         
