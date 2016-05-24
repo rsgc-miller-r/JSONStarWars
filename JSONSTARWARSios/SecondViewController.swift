@@ -12,6 +12,9 @@
 import UIKit
 import Foundation
 
+var beel : Bool = false
+
+
 var peopleaddress = String("http://swapi.co/api/people/?format=json")
 
 
@@ -29,13 +32,39 @@ class SecondViewController: UIViewController {
         //    print(json)
             
             if let value = json as? [String : AnyObject] {
+                
                 if let results = value["results"] as? [AnyObject]{
                     //print(results)
+                    isKill = ""
+                    print("IS 1")
+                    print(isKill)
                     for data in results {
+                        
                         let range = String(data["name"]).startIndex.advancedBy(9)..<String(data["name"]).endIndex.advancedBy(-1)
-                        String(data["name"])
-                        print(String(data["name"])[range])
-                        isKill += (String(self.peopleText.text) + String(data["name"])[range] + "\n")
+                        
+                        if (beel == true) {
+                            if (self.PeopleSearchText.text == String(data["name"])[range]) {
+                                
+                                print(data)
+                               
+                                isKill += "Height (cm): " + String(data["height"]) + "\n"
+                                isKill += "Mass (kg): " + String(data["mass"]) + "\n"
+                                isKill += "Hair Colour: " + String(data["hair_color"]) + "\n"
+                                isKill += "Skin Colour: " + String(data["skin_color"]) + "\n"
+                                isKill += "Eye Colour: " + String(data["eye_color"]) + "\n"
+                                isKill += "Birth Year (Before Battle of Yavin): " + String(data["birth_year"]) + "\n"
+                                isKill += "Gender: " + String(data["gender"]) + "\n"
+                                
+                            }
+                            
+                        } else {
+                            
+                            String(data["name"])
+                            print(String(data["name"])[range])
+                            isKill += (String(self.peopleText.text) + String(data["name"])[range] + "\n")
+                            print("IS 2")
+                            print(isKill)
+                        }
                         
                     }
                 }
@@ -44,8 +73,11 @@ class SecondViewController: UIViewController {
             
             dispatch_async(dispatch_get_main_queue()) {
                 
-                self.peopleText.text = isKill
-            }
+                if isKill != "" {
+                    self.peopleText.text = ""
+                    self.peopleText.text = isKill
+                }
+                beel = false            }
             
             
         } catch let error as NSError {
@@ -124,6 +156,18 @@ class SecondViewController: UIViewController {
         self.getMyJSON()
         
     }
+    
+    @IBAction func PeopleSearchButton(sender: UIButton) {
+        
+        isKill = ""
+        beel = true
+        
+        getMyJSON()
+        
+    }
+    
+    
+    @IBOutlet weak var PeopleSearchText: UITextField!
     
     
     override func viewDidLoad() {

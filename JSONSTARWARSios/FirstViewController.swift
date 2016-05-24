@@ -13,6 +13,10 @@
 import UIKit
 import Foundation
 
+var baal : Bool = false
+
+var isKill : String = ""
+
 var planetaddress = String("http://swapi.co/api/planets/?format=json")
 
 class FirstViewController: UIViewController {
@@ -21,7 +25,6 @@ class FirstViewController: UIViewController {
     func parseMyJSON(theData : NSData) {
         
         //print(theData)
-        var isKill : String = ""
         
         do {
             let json = try NSJSONSerialization.JSONObjectWithData(theData, options: NSJSONReadingOptions.AllowFragments)
@@ -29,13 +32,37 @@ class FirstViewController: UIViewController {
             //print(json)
             
             if let value = json as? [String : AnyObject] {
+                
                 if let results = value["results"] as? [AnyObject]{
                     //print(results)
+                    isKill = ""
+                    print("IS 1")
+                    print(isKill)
                     for data in results {
+                        
                         let range = String(data["name"]).startIndex.advancedBy(9)..<String(data["name"]).endIndex.advancedBy(-1)
-                        String(data["name"])
+                        
+                        if (baal == true) {
+                            if (self.PlanetSearchText.text == String(data["name"])[range]) {
+                                
+                                print(data)
+                                isKill += "Gravity :" + String(data["gravity"]) + "\n"
+                                isKill += "Orbital Period :" + String(data["orbital_period"]) + "\n"
+                                isKill += "Population :" + String(data["population"]) + "\n"
+                                isKill += "Rotation Period :" + String(data["rotation_period"]) + "\n"
+                                isKill += "Surface Water (Square Miles) :" + String(data["surface_water"]) + "\n"
+                                isKill += "Terrain :" + String(data["terrain"]) + "\n"
+                                
+                            }
+                            
+                        } else {
+                        
+                                                String(data["name"])
                         print(String(data["name"])[range])
                         isKill += (String(self.planetText.text) + String(data["name"])[range] + "\n")
+                        print("IS 2")
+                        print(isKill)
+                        }
 
                     }
                 }
@@ -43,8 +70,11 @@ class FirstViewController: UIViewController {
             
             
             dispatch_async(dispatch_get_main_queue()) {
-                
-                self.planetText.text = isKill
+                if isKill != "" {
+                    self.planetText.text = ""
+                    self.planetText.text = isKill
+                }
+                baal = false
             }
             
             
@@ -119,11 +149,19 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var planetText: UITextView!
 
     @IBAction func planetButton(sender: UIButton) {
-        
+        isKill = ""
         self.getMyJSON()
         
     }
 
+    @IBAction func PlanetSearchButton(sender: UIButton) {
+        isKill = ""
+        baal = true
+        
+        getMyJSON()
+    }
+    
+    @IBOutlet weak var PlanetSearchText: UITextField!
     
     override func viewDidLoad() {
         
