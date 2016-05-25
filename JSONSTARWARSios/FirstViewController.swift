@@ -42,16 +42,29 @@ class FirstViewController: UIViewController {
                         
                         let range = String(data["name"]).startIndex.advancedBy(9)..<String(data["name"]).endIndex.advancedBy(-1)
                         
+                        let rangeGrav = String(data["gravity"]).startIndex.advancedBy(9)..<String(data["gravity"]).endIndex.advancedBy(-1)
+                        
+                        let rangeOrbit = String(data["orbital_period"]).startIndex.advancedBy(9)..<String(data["orbital_period"]).endIndex.advancedBy(-1)
+                        
+                        let rangePop = String(data["population"]).startIndex.advancedBy(9)..<String(data["population"]).endIndex.advancedBy(-1)
+                        
+                        let rangeRot = String(data["rotation_period"]).startIndex.advancedBy(9)..<String(data["rotation_period"]).endIndex.advancedBy(-1)
+                        
+                        let rangeSW = String(data["surface_water"]).startIndex.advancedBy(9)..<String(data["surface_water"]).endIndex.advancedBy(-1)
+                        
+                        let rangeTerrain = String(data["terrain"]).startIndex.advancedBy(9)..<String(data["terrain"]).endIndex.advancedBy(-1)
+                        
+                        
                         if (baal == true) {
                             if (self.PlanetSearchText.text == String(data["name"])[range]) {
                                 
                                 print(data)
-                                isKill += "Gravity :" + String(data["gravity"]) + "\n"
-                                isKill += "Orbital Period :" + String(data["orbital_period"]) + "\n"
-                                isKill += "Population :" + String(data["population"]) + "\n"
-                                isKill += "Rotation Period :" + String(data["rotation_period"]) + "\n"
-                                isKill += "Surface Water (Square Miles) :" + String(data["surface_water"]) + "\n"
-                                isKill += "Terrain :" + String(data["terrain"]) + "\n"
+                                isKill += "Gravity :" + String(data["gravity"])[rangeGrav] + "\n"
+                                isKill += "Orbital Period :" + String(data["orbital_period"])[rangeOrbit] + "\n"
+                                isKill += "Population :" + String(data["population"])[rangePop] + "\n"
+                                isKill += "Rotation Period :" + String(data["rotation_period"])[rangeRot] + "\n"
+                                isKill += "Surface Water (Square Miles) :" + String(data["surface_water"])[rangeSW] + "\n"
+                                isKill += "Terrain :" + String(data["terrain"])[rangeTerrain] + "\n"
                                 
                             }
                             

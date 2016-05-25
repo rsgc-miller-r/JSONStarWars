@@ -42,18 +42,32 @@ class SecondViewController: UIViewController {
                         
                         let range = String(data["name"]).startIndex.advancedBy(9)..<String(data["name"]).endIndex.advancedBy(-1)
                         
+                        let rangeHeight = String(data["height"]).startIndex.advancedBy(9)..<String(data["height"]).endIndex.advancedBy(-1)
+                        
+                        let rangeMass = String(data["mass"]).startIndex.advancedBy(9)..<String(data["mass"]).endIndex.advancedBy(-1)
+                        
+                        let rangeHair = String(data["hair_color"]).startIndex.advancedBy(9)..<String(data["hair_color"]).endIndex.advancedBy(-1)
+                        
+                        let rangeSkin = String(data["skin_color"]).startIndex.advancedBy(9)..<String(data["skin_color"]).endIndex.advancedBy(-1)
+                        
+                        let rangeEye = String(data["eye_color"]).startIndex.advancedBy(9)..<String(data["eye_color"]).endIndex.advancedBy(-1)
+                        
+                        let rangeBirth = String(data["birth_year"]).startIndex.advancedBy(9)..<String(data["birth_year"]).endIndex.advancedBy(-1)
+                        
+                        let rangeGen = String(data["gender"]).startIndex.advancedBy(9)..<String(data["gender"]).endIndex.advancedBy(-1)
+                        
                         if (beel == true) {
                             if (self.PeopleSearchText.text == String(data["name"])[range]) {
                                 
                                 print(data)
                                
-                                isKill += "Height (cm): " + String(data["height"]) + "\n"
-                                isKill += "Mass (kg): " + String(data["mass"]) + "\n"
-                                isKill += "Hair Colour: " + String(data["hair_color"]) + "\n"
-                                isKill += "Skin Colour: " + String(data["skin_color"]) + "\n"
-                                isKill += "Eye Colour: " + String(data["eye_color"]) + "\n"
-                                isKill += "Birth Year (Before Battle of Yavin): " + String(data["birth_year"]) + "\n"
-                                isKill += "Gender: " + String(data["gender"]) + "\n"
+                                isKill += "Height (cm): " + String(data["height"])[rangeHeight] + "\n"
+                                isKill += "Mass (kg): " + String(data["mass"])[rangeMass] + "\n"
+                                isKill += "Hair Colour: " + String(data["hair_color"])[rangeHair] + "\n"
+                                isKill += "Skin Colour: " + String(data["skin_color"])[rangeSkin] + "\n"
+                                isKill += "Eye Colour: " + String(data["eye_color"])[rangeEye] + "\n"
+                                isKill += "Birth Year (Before Battle of Yavin): " + String(data["birth_year"])[rangeBirth] + "\n"
+                                isKill += "Gender: " + String(data["gender"])[rangeGen] + "\n"
                                 
                             }
                             
